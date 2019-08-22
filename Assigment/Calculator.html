@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>My Calculator</title>
+    <title>
+        <h1>My Calculator</h1>
+    </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,58 +16,69 @@
 </head>
 
 <body>
-    <div class="containter">
-        <div class="row">
-            <div class="col-sm-2 case text-center">
-                <table class="table-bordered">
-                    <tr>
-                        <td colspan="5"><input id="text_hist" class="text_hist" type="text" readonly /> </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><input id="text_result" class="text_result" type="text" readonly/> </td>
-                    </tr>
+    <div class="row">
+        <div class="col-sm-4 offset-sm-4 ">
+            <div class="card case-box">
+                <div class="card-header">
+                    My Calculator
+                </div>
 
-                    <tr>
-                        <td><button id="btnModulus" class="button" type="button" value="%">%</button></td>
-                        <td><button id="btnClear" class="button red" type="button" value="C">C</button></td>
-                        <td><button id="btnBackspace" class="button" type="button">&#8592;</button></td>
-                        <td><button id="btnDivide" class="button" type="button" value="/">&divide;</button></td>
-                    </tr>
+                <div class="card-body light-blue">
+                    <div class="row">
+                        <div class="col hist-label">
+                            <label id="text_hist" class="text_hist" type="text">---</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input id="text_result" type="text" class="form-control led" readonly>
+                        </div>
+                    </div>
 
-                    <tr>
-                        <td><input id="btnSeven" class="button" type="button" value="7"> </td>
-                        <td><input id="btnEight" class="button" type="button" value="8"></td>
-                        <td><input id="btnNine" class="button" type="button" value="9"></td>
-                        <td><button id="btnMultiply" class="button" type="button" value="*">&times;</button></td>
-                    </tr>
+                    <div class="row">
+                        <div class="col">
+                            <button id="btnModulus" class="btn btn-secondary btn-lg btn-block" type="button" value="%">%</button>
+                        </div>
+                        <div class="col"><button id="btnClear" class="btn btn-danger btn-lg btn-block" type="button" value="C">C</button></div>
+                        <div class="col"><button id="btnBackspace" class="btn btn-secondary btn-lg btn-block" type="button">&#8592;</button></div>
+                        <div class="col"><button id="btnDivide" class="btn btn-secondary btn-lg btn-block" type="button" value="/">&divide;</button></div>
+                    </div>
 
-                    <tr>
-                        <td><input id="btnFour" class="button" type="button" value="4"> </td>
-                        <td><input id="btnFive" class="button" type="button" value="5"></td>
-                        <td><input id="btnSix" class="button" type="button" value="6"></td>
-                        <td><button id="btnMinus" class="button" type="button" value="-">-</button></td>
-                    </tr>
+                    <div class="row">
+                        <div class="col"><button id="btnSeven" class="btn btn-secondary btn-lg btn-block grey" type="button" value="7"> 7</button></div>
+                        <div class="col"><button id="btnEight" class="btn btn-secondary btn-lg btn-block grey" type="button" value="8">8</button></div>
+                        <div class="col"><button id="btnNine" class="btn btn-secondary btn-lg btn-block grey" type="button" value="9">9</button></div>
+                        <div class="col"><button id="btnMultiply" class="btn btn-secondary btn-lg btn-block" type="button" value="*">&times;</button></div>
+                    </div>
 
-                    <tr>
-                        <td><input id="btnOne" class="button" type="button" value="1"> </td>
-                        <td><input id="btnTwo" class="button" type="button" value="2"></td>
-                        <td><input id="btnThree" class="button" type="button" value="3"></td>
-                        <td><button id="btnPlus" class="button" type="button" value="+">+</button></td>
-                    </tr>
+                    <div class="row">
+                        <div class="col"><button id="btnFour" class="btn btn-secondary btn-lg btn-block grey" type="button" value="4"> 4</button></div>
+                        <div class="col"><button id="btnFive" class="btn btn-secondary btn-lg btn-block grey" type="button" value="5">5</button></div>
+                        <div class="col"><button id="btnSix" class="btn btn-secondary btn-lg btn-block grey" type="button" value="6">6</button></div>
+                        <div class="col"><button id="btnMinus" class="btn btn-secondary btn-lg btn-block " type="button" value="-">-</button></div>
+                    </div>
 
-                    <tr>
-                        <td><input id="" class="button" type="button" value=""> </td>
-                        <td><input id="btnZero" class="button" type="button" value="0"></td>
-                        <td><button id="btnComma" class="button" type="button" value=".">,</button></td>
-                        <td><button id="btnEquals" class="button" type="button" value="=">=</button></td>
-                    </tr>
-                </table>
+
+
+                    <div class="row">
+                        <div class="col"><button id="btnOne" class="btn btn-secondary btn-lg btn-block grey" type="button" value="1">1</button></div>
+                        <div class="col"><button id="btnTwo" class="btn btn-secondary btn-lg btn-block grey" type="button" value="2">2</button></div>
+                        <div class="col"><button id="btnThree" class="btn btn-secondary btn-lg btn-block grey" type="button" value="3">3</button></div>
+                        <div class="col"><button id="btnPlus" class="btn btn-secondary btn-lg btn-block" type="button" value="+">+</button></div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col"></div>
+                        <div class="col"><button id="btnZero" class="btn btn-secondary btn-lg btn-block grey" type="button" value="0">0</button></div>
+                        <div class="col"><button id="btnComma" class="btn btn-secondary btn-lg btn-block grey" type="button" value=".">.</button></div>
+                        <div class="col"><button id="btnEquals" class="btn btn-secondary btn-lg btn-block blue" type="button" value="=">=</button></div>
+                    </div>
+
+                </div>
             </div>
         </div>
-
     </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -80,100 +93,108 @@
 
             $(document).on("click", "#btnNine", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnEight", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnSeven", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnSix", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnFive", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnFour", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnThree", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnTwo", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnOne", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnZero", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnDivide", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnMultiply", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnPlus", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnMinus", function() {
                 text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnComma", function() {
-                text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                text_hist += $(this).text();
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnModulus", function() {
-                text_hist += $(this).val();
-                $("#text_hist").val("" + text_hist);
+                text_hist += $(this).text();
+                $("#text_hist").text("" + text_hist);
             });
 
             $(document).on("click", "#btnClear", function() {
                 text_hist = "";
-                $("#text_hist").val("");
+                $("#text_hist").text("---");
                 $("#text_result").val("");
             });
 
             $(document).on("click", "#btnBackspace", function() {
                 text_hist = text_hist.slice(0, -1);
-                $("#text_hist").val("" + text_hist);
+                $("#text_hist").text("" + text_hist);
+                if (text_hist == "") {
+                    $("#text_hist").text("---");
+                }
             });
 
             $(document).on("click", "#btnEquals", function() {
 
                 try {
-                    var result = eval(text_hist);
-                    $("#text_result").val("" + result);
+                    if (text_hist != "---") {
+                        var result = eval(text_hist);
+                        $("#text_result").val("" + result);
+                    } else {
+                        $("#text_result").val("0");
+                    }
+
                 } catch (e) {
                     if (e instanceof SyntaxError) {
                         $("#text_result").val("ERR");
