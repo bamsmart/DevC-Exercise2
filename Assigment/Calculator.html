@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="containter">
+        <div class="row">
+            <div class="col-sm-2 case text-center">
+                <table class="table-bordered">
+                    <tr>
+                        <td colspan="5"><input id="text_hist" class="text_hist" type="text" readonly /> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><input id="text_result" class="text_result" type="text" readonly/> </td>
+                    </tr>
+
+                    <tr>
+                        <td><button id="btnModulus" class="button" type="button" value="%">%</button></td>
+                        <td><button id="btnClear" class="button red" type="button" value="C">C</button></td>
+                        <td><button id="btnBackspace" class="button" type="button">&#8592;</button></td>
+                        <td><button id="btnDivide" class="button" type="button" value="/">&divide;</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="btnSeven" class="button" type="button" value="7"> </td>
+                        <td><input id="btnEight" class="button" type="button" value="8"></td>
+                        <td><input id="btnNine" class="button" type="button" value="9"></td>
+                        <td><button id="btnMultiply" class="button" type="button" value="*">&times;</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="btnFour" class="button" type="button" value="4"> </td>
+                        <td><input id="btnFive" class="button" type="button" value="5"></td>
+                        <td><input id="btnSix" class="button" type="button" value="6"></td>
+                        <td><button id="btnMinus" class="button" type="button" value="-">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="btnOne" class="button" type="button" value="1"> </td>
+                        <td><input id="btnTwo" class="button" type="button" value="2"></td>
+                        <td><input id="btnThree" class="button" type="button" value="3"></td>
+                        <td><button id="btnPlus" class="button" type="button" value="+">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="" class="button" type="button" value=""> </td>
+                        <td><input id="btnZero" class="button" type="button" value="0"></td>
+                        <td><button id="btnComma" class="button" type="button" value=".">,</button></td>
+                        <td><button id="btnEquals" class="button" type="button" value="=">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/action.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var text_hist = "";
+
+            $(document).on("click", "#btnNine", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnEight", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnSeven", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnSix", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnFive", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnFour", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnThree", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnTwo", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnOne", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnZero", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnDivide", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnMultiply", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnPlus", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnMinus", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnComma", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnModulus", function() {
+                text_hist += $(this).val();
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnClear", function() {
+                text_hist = "";
+                $("#text_hist").val("");
+                $("#text_result").val("");
+            });
+
+            $(document).on("click", "#btnBackspace", function() {
+                text_hist = text_hist.slice(0, -1);
+                $("#text_hist").val("" + text_hist);
+            });
+
+            $(document).on("click", "#btnEquals", function() {
+
+                try {
+                    var result = eval(text_hist);
+                    $("#text_result").val("" + result);
+                } catch (e) {
+                    if (e instanceof SyntaxError) {
+                        $("#text_result").val("ERR");
+                    }
+                }
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
