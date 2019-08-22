@@ -1,0 +1,11 @@
+data type primitive : 
+Number 
+String
+Boolean
+
+alert(); 
+prompt(); 
+
+
+innerHTML; 
+textContent; 

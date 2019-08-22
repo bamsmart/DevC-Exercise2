@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>My Calculator</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <input type="text" id="textInput1" class="form-control" placeholder="Type a Number">
+            </div>
+            <div class="col">
+                <select id="comboOperator" class="form-control">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text" id="textInput2" class="form-control" placeholder="Type a Number">
+            </div>
+            <div class="col">
+                <button type="button" id="btnEquals" class="btn btn-outline-dark" onclick="calculate();">Calculate</button>
+            </div>
+            <div class="col">
+                <input type="text" id="textResult" class="form-control" placeholder="Result" readonly>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script type="text/javascript">
+        function calculate() {
+            var d = document;
+            var input1 = d.getElementById("textInput1").value;
+            var input2 = d.getElementById("textInput2").value;
+            var operator = d.getElementById("comboOperator").value;
+            var result = eval(input1 + "" + operator + "" + input2);
+
+            d.getElementById("textResult").value = result;
+        }
+    </script>
+</body>
+
+</html>

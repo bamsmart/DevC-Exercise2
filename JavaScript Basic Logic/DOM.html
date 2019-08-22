@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="demo" onclick="change();">Test</p>
+    <h1 id="test" onclick="query();">Ini akan diubah dengan query selector</h1>
+
+
+    <input type="text" id="nama" value="Bambang T. Lasiman">
+
+    <span id="result_name">-</span>
+
+    <button type="button" onclick="changeName(); ">Click To Change</button>
+
+
+    <h2>
+        <p>Paragraf Awal</p>
+    </h2>
+
+    <script type="text/javascript">
+        var d = document;
+        d.querySelector("h2").innerHTML = "Halaman yang diubah; ";
+
+        function change() {
+            var d = document;
+            d.getElementById('demo').innerHTML = "Bambang";
+        }
+
+        function query() {
+            document.querySelector("h1").textContent = "<p> ok </p>";
+        }
+
+        var input_name = document.getElementById("nama").value;
+        document.getElementById("result_name").innerHTML = input_name;
+
+
+        function changeName() {
+            var input_name = document.getElementById("nama").value;
+            document.getElementById("result_name").innerHTML = input_name;
+        }
+    </script>
+</body>
+
+</html>
